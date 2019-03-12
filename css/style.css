@@ -1,0 +1,419 @@
+/*white = rgb(90, 96, 124)*/
+
+/* primary color = #FF8CC6*/
+
+.info{
+    background:rgb(90, 96, 124);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(90, 96, 124);
+    background:linear-gradient(#474b4ab6 1%,#18171775 100%),url(../img/jon-tyson-204115-unsplash.jpg) center/cover no-repeat fixed;
+    
+}
+.primary-color{
+    color:#FF8CC6;
+}
+.info h2{
+    word-spacing: 0.5rem;
+}
+.info a{
+    transition: color 1s ease-in-out;
+}
+.info a:hover{
+    color:#C884A6;
+}
+
+.info-icons a{
+    display: inline-block;
+    color:#FF8CC6;
+    transition: all 2s ease-in-out;
+}
+.info-icons a:hover{
+    color:rgb(182, 150, 166);
+   transform: translateY(-8px);
+}
+
+
+/*header Section*/
+
+header{
+    min-height: calc(100vh - 95px);
+    background:linear-gradient(to bottom, #d4dad9b6 1%,#46434375 100%),url(blur-bokeh-close-up-1148086.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.height-90{
+    min-height: calc(100vh - 95px);
+}
+/*Banner heading*/
+.banner h1{
+    border-bottom: 8px dotted #EEE5E9;
+    border-top: 8px dotted #EEE5E9;
+    animation: fromleft;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+/*animation for Banner*/
+
+@keyframes fromleft{
+    0%{transform: translateX(-120px);
+    opacity: 0;}
+    50%{transform: translateX(60px);
+    }
+    100%{transform: translateX(0);
+    opacity: 1;}
+}
+/*animation for order button*/
+
+@keyframes fromright{
+    0%{transform: translateX(120px);
+    opacity: 0;}
+    50%{transform: translateX(-60px);
+    }
+    100%{transform: translateX(0);
+    opacity: 1;}
+}
+
+
+
+
+
+/*Button Style*/
+.main-btn{
+    color:#FF8CC6;
+    font-size:2rem;
+    border: 3px dotted #FF8CC6;
+    background: rgba(219, 207, 207, 0.26);
+    transition: all 1s ease-in-out;
+}
+.main-btn:hover{
+    color: rgb(90, 96, 124);
+    border-color: #C884A6;
+    background: #EEE5E9;
+}
+.order-btn{
+    animation: fromright;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+
+}
+.header-link{
+    display:inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: calc(50% - 33px);
+    background:  #EEE5E9; 
+    border-radius: 0 0 22px 22px;
+    transition: all 1s ease-in;
+    animation: frombottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.header-link:hover{
+    color: rgb(90, 96, 124);
+}
+@keyframes frombottom{
+    0%{transform: translateY(-10px);
+    }
+    50%{transform: translateY(10px);
+    }
+    100%{transform: translateY(-10px);
+    }
+}
+/*      NavBar         */
+.navbar{
+    background: rgba(236, 229, 229, 0.89);
+    padding: 20px 20px;
+    transition: all 2s ease;
+}
+.navbar-background{
+    padding: 5px 20px;
+}
+.navbar-brand{
+    font-size:30px;  
+    transition: all 1s ease-in-out;
+}
+.navbar-brand:hover{
+    color: grey;
+}
+.nav-link{
+    color: rgb(160, 73, 116);
+    text-decoration: none;
+    transition: all 2s ease-in-out;
+    font-size: 20px;
+}
+.nav-link:hover{
+    color: rgb(92, 13, 138);
+    font-weight:bold;
+}
+
+.toggle-btn{
+    border: solid 2px #FF8CC6;
+}
+.bar{
+    width: 30px;
+    height: 3px;
+    margin:5px;
+    background: #FF8CC6;
+    transition: all 1s ease-in-out;
+}
+
+.change .bar1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Menu Items*/
+
+.item-container{
+    position: relative;
+    /* for the link*/
+    overflow: hidden;
+    background: linear-gradient(rgb(0,0,0),rgb(0,0,0));
+    transition: all 2s ease-in-out;
+}
+.item-container:hover{
+    outline: 8px solid #FF8CC6;
+    outline-offset: -15px;
+}
+.item-img{
+    width: 100%;
+    transition: all 2s ease-in-out;
+
+}
+.item-container:hover .item-img{
+    transform: scale(1.15);
+    opacity: 0.5;
+}
+
+.item-link{
+    font-size: 2.5rem;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:#FF8CC6;
+    border-bottom: 2px solid;
+    border-bottom: 2px solid;
+    transition: all 2s ease-in-out;
+    opacity: 0;
+}
+.item-container:hover .item-link{
+    opacity: 1;
+}
+
+.item-link:hover{
+    color: rgb(90, 96, 124);
+    background: white;
+    border: 3px white;
+}
+/*      MENU */
+#menu{
+    background: linear-gradient(rgba(255,253,253,0.7),rgba(255,253,253,0.7)), url(../item-1.jpg) center/cover fixed no-repeat;
+}
+.special{
+    border: 3px solid #FF8CC6;
+    position: relative;
+}
+.special-text{
+    position: absolute;
+    top:0;
+    right:0;
+    background: rgb(255, 0, 85);
+    padding:4px;
+    border-radius: 10px 0 0 10px;
+}
+/*----- About Us-----*/
+.about-pictures{
+    position: relative;
+}
+.about-image{
+    position: absolute;
+    width: 140px;
+    transition: all 2s ease-in-out;
+    opacity: 0.9;
+    border-radius: 15%;
+}
+.about-image:hover{
+    outline: 4px solid #FF8CC6;
+    outline-offset: 2px;
+    border-radius: 15%;
+    transform: scale(1.4) rotate(24deg);
+    z-index: 30;
+    opacity: 1;
+
+}
+.img-1{
+    left:0;
+    top:0;
+    z-index: 20;
+}
+.img-2{
+    left:20%;
+    top:20%;
+    z-index: 10;
+}
+.img-3{
+    left:40%;
+    top:45%;
+    z-index: 20;
+}
+.img-4{
+    left:40%;
+    top:0%;
+}
+.img-5{
+    left:0%;
+    top:45%;
+}
+
+.about-pictures:hover .about-image:not(:hover){
+    opacity: 0.5;
+}
+/* Reviews*/
+.reviews-item{
+    background: rgb(255,255,255,0.7);
+    clip-path:polygon(10% 0,100% 0,90% 100%,0 100%); 
+}
+.review-image{
+    width: 175px;
+    margin-left: 40px;
+}
+
+/*---   Team Members --*/
+.team-icons a{
+    color:#FF8CC6;
+    opacity: 0.6;
+    transition: all 2s ease-in-out;
+}
+.team-icons a:hover{
+    color: rgb(252, 106, 203);
+    opacity: 1;
+    transform: translateY(-12px);
+}
+
+/*   Contact  --  - */
+.height-60{
+   min-height: 60vh;  
+}
+#contact .card{
+    background: rgba(138, 132, 132, 0.5);
+    transition: all 2s ease;
+}
+#contact .card:hover{
+    background: rgba(138, 132, 132, 0.8);
+}
+#contact .card-header{
+    color: #FF8CC6;
+}
+#contact .input-group-text{
+    background: #FF8CC6;
+}
+#contact .card input{
+    color: black;
+    font-weight: bold;
+}
+#contact .card input::placeholder{
+    color: black;
+}
+.contact-btn{
+    color: #FF8CC6;
+    border: solid 2px silver;
+    background: transparent;
+    transition: all 2s ease-in-out;
+}
+.contact-btn:hover{
+    background: rgb(223, 216, 216);
+    color: rgb(255, 0, 212);
+    font-weight: bold;
+}
+/*  footer    */
+
+#back-to-top{
+    background: silver;
+    border-radius: 8px;
+    display:inline-block;
+}
+.scroll-top{
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
